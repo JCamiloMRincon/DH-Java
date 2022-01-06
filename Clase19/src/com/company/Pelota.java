@@ -1,0 +1,18 @@
+package com.company;
+
+import static java.lang.Math.PI;
+
+public class Pelota extends Producto{
+
+    private double radio;
+
+    public Pelota(double radio) {
+        this.radio = radio;
+    }
+
+    @Override
+    public double calcularEspacio() {
+        return (4.0/3.0) * PI * this.radio * this.radio * this.radio;
+    }
+
+}
